@@ -24,11 +24,44 @@ $('.js--wp-1').waypoint(function(direction) {
 $('.js--wp-2').waypoint(function(direction) {
     $('.js--wp-2').addClass('animated fadeInUp');
 }, {
-    offset: '65%;'
+    offset: '55%;'
 });
 
 $('.js--wp-3').waypoint(function(direction) {
     $('.js--wp-3').addClass('animated fadeInUp');
 }, {
-    offset: '65%;'
+    offset: '70%;'
+});
+
+$('.js--wp-4').waypoint(function(direction) {
+    $('.js--wp-4').addClass('animated fadeInUp');
+}, {
+    offset: '90%;'
+});
+
+$('.js--wp-5').waypoint(function(direction) {
+    $('.js--wp-5').addClass('animated fadeIn');
+}, {
+    offset: '90%;'
+});
+
+/* Maps */
+$(document).ready(function() {
+
+    var map = new GMaps({
+        div: '.map',
+        lat: 45.2623546,
+        lng: 19.9367733,
+        zoom: 12
+    });
+
+    map.addMarker({
+      lat: 45.2518758,
+      lng: 19.8345493,
+      title: 'Novi Sad',
+      infoWindow: {
+      content: '<p>This is our Novi Sad</p>'
+      }
+    });
+    
 });

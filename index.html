@@ -104,15 +104,15 @@
                     </div>
 
                     <div class="col-sm-3 text-center img2">
-                        <img id="img2" src="resources/imgs/tools/gray/android.png">
+                        <img id="img2" src="resources/imgs/tools/gray/unity.png">
                     </div>
 
                     <div class="col-sm-3 text-center img3">
-                        <img id="img3" src="resources/imgs/tools/gray/unity.png">
+                        <img id="img3" src="resources/imgs/tools/gray/sql.png">
                     </div>
 
                     <div class="col-sm-3 text-center img4">
-                        <img id="img4" src="resources/imgs/tools/gray/sql.png">
+                        <img id="img4" src="resources/imgs/tools/gray/android.png">
                     </div>
 
                     <div class="col-sm-3 text-center img5">
@@ -139,6 +139,23 @@
             <div class="col-sm-8 contact-left">
             
                 <h2>Contact me</h2>
+                
+                <!-- Contact form -->
+                <form>
+                  <div class="form-group">
+                    <input class="form-control" id="email" placeholder="Name">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="last-name" placeholder="Last name">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="last-name" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" name="message" id="message" placeholder="Your message"></textarea>
+                  </div>
+                  <button type="submit" class="button-form button-confirm">Submit</button>
+                </form>
 
             </div>
             
@@ -148,10 +165,80 @@
             </div>
         </div>
         
+        <!-- TUTORIALS -->
+        <div id="tutorials" class="container-fluid section tutorials">
+            <div class="col-sm-2"></div>
+            
+            <div class="col-sm-8 tutorials-center">
+                <h2>Tutorials</h2>
+                <div class="col-sm-4">
+                    <img src="resources/imgs/tools/green/java.png" class="js--wp-4">
+                </div>
+                <div class="col-sm-4">
+                    <img src="resources/imgs/tools/green/android.png" class="js--wp-4">
+                </div>
+                <div class="col-sm-4">
+                    <img src="resources/imgs/tools/green/github.png" class="js--wp-4">
+                </div>
+            </div>
+            
+            <div class="col-sm-2"></div>
+        </div>
+        
+        <!-- MY LINKS -->
+        <div class="container-fluid section my-links">
+            <img src="resources/imgs/my-photo.jpg" id="my-photo">
+        </div>
+        <div class="social-networks-links">
+            <i class="ion-social-whatsapp js--wp-5"></i>
+            <i class="ion-social-skype js--wp-5"></i>
+            <i class="ion-social-google js--wp-5"></i>
+            <i class="ion-social-linkedin js--wp-5"></i>
+            <i class="ion-social-github js--wp-5"></i>
+            <i class="ion-social-facebook js--wp-5"></i>
+        </div>
+        
+        <!-- LOCATION -->
+        <div id="location" class="container-fluid section location">
+            <h2>Location</h2>
+        </div>
+        
+        <div class="map"></div>
+        
+        <!-- FOOTER -->
+        <footer>
+            <div class="col-sm-6">
+                <ul class="footer-nav">
+                    <li><a href="#">About me</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">iOS App</a></li>
+                    <li><a href="#">Android App</a></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-6">
+                <ul class="social-links">
+                    <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                    <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                    <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                    <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                </ul>
+            </div>
+            
+            
+            <p>
+                Copyright &copy; 2017 by Nemanja Gajić. All rights reserved.
+            </p>
+        
+        </footer>
+        
+        
         <!-- SCRIPTS -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
         <script src="vendors/js/jquery.waypoints.min.js"></script>
         <script src="resources/js/script.js"></script>
+        <script src="vendors/js/gmaps.js"></script>
     </body>
     
 </html>
